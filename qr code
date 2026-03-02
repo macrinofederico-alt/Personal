@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grazie</title>
+<style>
+html, body { margin:0; height:100%; }
+body {
+  background: url("finale-verde.png") center/cover no-repeat fixed;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+  text-align:center;
+}
+h1 { font-size:48px; margin:0; }
+p { font-size:22px; margin-top:15px; opacity:0.95; }
+</style>
+</head>
+<body>
+<div>
+  <h1>Grazie del tuo tempo.</h1>
+  <p>Ogni risposta conta.</p>
+</div>
+</body>
+</html>
