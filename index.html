@@ -4,49 +4,35 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title></title>
+
 <style>
-  html, body {
-    margin: 0;
-    height: 100%;
-    background: #000;
-  }
+html, body {
+  margin: 0;
+  height: 100%;
+  background-color: #00C853; /* verde pieno */
+}
 
-  .stage {
-    position: fixed;
-    inset: 0;
-    overflow: hidden;
-    display: grid;
-    place-items: center;
-    background: #000;
-  }
+.wrapper {
+  height: 100vh;
+  height: 100dvh; /* migliore su mobile */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  /* sfondo: stessa immagine, grande e sfocata */
-  .stage::before {
-    content: "";
-    position: absolute;
-    inset: -40px; /* evita bordi quando blur */
-    background-image: url("FINALE-VERDE.PNG");
-    background-size: cover;
-    background-position: center;
-    filter: blur(28px) brightness(0.75);
-    transform: scale(1.1);
-  }
-
-  /* immagine principale: sempre tutta visibile */
-  img {
-    position: relative;
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    display: block;
-  }
+img {
+  max-width: 90%;
+  max-height: 90%;
+  height: auto;
+  width: auto;
+  display: block;
+}
 </style>
 </head>
+
 <body>
-  <div class="stage">
-    <img src="finale-verde.png.png" alt="">
+  <div class="wrapper">
+    <img src="finale-verde.png.png" alt="Logo">
   </div>
 </body>
 </html>
